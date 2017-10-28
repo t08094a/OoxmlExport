@@ -177,7 +177,7 @@ class ExcelReader:
 
             baseValue = cell.value
 
-            value = self.__convertCellValue(baseValue, cell.ctype)
+            value = self.__convertCellValue(baseValue, cell.ctype).strip()
 
             if operation == XmlOperation.open:
                 xml += "        <{0}>{1}".format(name, value)
