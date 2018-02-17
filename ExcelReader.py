@@ -138,7 +138,7 @@ class ExcelReader:
         offsetAusbildung = offsetLp + 12 + 7
         offsetVerfuegbarkeit = offsetAusbildung + 8 + 1
 
-        ids = {0: "Nummer", 2: "aktivUeber18", 3: "aktivUnter18", 4: "maennlich", 5: "weiblich",
+        ids = {2: "aktivUeber18", 3: "aktivUnter18", 4: "maennlich", 5: "weiblich",
                7: "vereinAktiv", 9: "vereinPassiv", 11: "vereinFoerdernd",
                14: "rang", 15: "gruppe",
                17: "nachname", 18: "vorname", 19: "strasse", 20: "hausnummer", 21: "plz", 22: "ort", 23: ("geburtsdatum", XmlOperation.open), 24: ("geburtsdatum", XmlOperation.close),
